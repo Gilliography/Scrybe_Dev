@@ -1,0 +1,60 @@
+<! DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My First Website</title>
+        <style>
+            body{
+                padding-top: 60px;
+                padding-bottom:50px;
+            }
+            .fixed-header, .fixed-footer{
+                width: 100%;
+                position:fixed;
+                background: green;
+                padding: 10px 0;
+                color:brown;
+            }
+            .fixed-header{
+                top: 0;
+            }
+            .fixed-footer{
+                bottom:0;
+            }
+            .container{
+                width: 80%;
+                margin:0 auto;
+            }
+            nav a{
+                color: azure;
+                text-decoration: none;
+                padding: 7px, 25px;
+                display: inline-block;
+                text-align: right;
+                padding-left: 20px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="fixed-header">
+            <div class="container"> 
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Portfolio</a>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <p>This is my first project in HTML and CSS</p>
+
+        </div>
+        <div class="fixed-footer">
+            <div class="container"> Copyright &copy; 2023 Scrybe_Dev</div>
+        </div>
+        
+        
+    </body>
+</html>

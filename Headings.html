@@ -3,33 +3,45 @@
     <head>
         <title>HTML Headings</title>
         <style>
-           
+                       
             ul {
               list-style-type:square; /* Optional: Specify the bullet point shape */
               color: red; /* Change the bullet point color here */
               align-content: stretch;
+              grid-auto-rows: auto;
             }
+              
             ol{
                 list-style-type: lower-roman;
                 color: green;
                 align-content: flex-start;
-                padding: 30px;
                 margin: 20px;
             }
+
+            #veges {
+                color:maroon;
+
+            }
+
+            #foo {
+                color:green;
+                font-weight:bold;
+            }
           </style>
+
         </head>
         <body>
             <h1>
                 This is a heading
                 </h1>
-                <h2>Ordered List</h2>
+                <h2 class="foo">Ordered List</h2>
                 <ol>
                     <li>Beans</li>
                     <li>Maize</li>
                     <li>Potatoes</li>
                     </ol>
-                    <h2>Un-ordered List</h2>
-                    <ul>
+                    <h1 class="foo" Un-ordered List</h1>
+                    <ul id="veges">
                         <li>Cabbage</li>
                         <li>Kales</li>
                         <li>Broccoli</li>
@@ -38,6 +50,7 @@
 
                         <input type="text" name="text" value="Enter text here"/>
                         <input type="file" name="fileupload" value="Upload your resume"/>
+                        <br>
                         <br>
                         <br>
                         <input type="submit" name="submit" value="submit"/> 
