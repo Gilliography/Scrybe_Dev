@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Animation With CSS</title>
+        <style>
+            body{
+                margin:0;
+            }
+            #grid{
+                height:100vh;
+            }
+            #left{
+                background:crimson;
+            }
+            #right{
+                background:navajowhite;
+                border:3rem solid rgb(0 0 0 / 10%);
+            }
+            #grid{
+                transition:300ms;
+                display:grid;
+                grid-template-columns:48px auto;
+
+            }
+            #grid:has(#left:hover){
+                grid-template-columns:30% auto;
+            }
+            #grid{
+                transition:300ms;
+                display:grid;
+                grid-template-columns: var(--left, 48px) auto;
+            }
+            #grid:has(#left:hover){
+                --left:30ms;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="grid">
+            <div id="left"></div>
+            <div id="right"></div>
+            </div>
+    </body>
+</html>
