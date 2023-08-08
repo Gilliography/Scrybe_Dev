@@ -68,3 +68,24 @@ body{
     border: 1px solid grey;
     padding:0 10px;
 }
+.gender-title{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+.gender-category{
+    margin: 15px 0;
+    color:white;
+}
+.gender-category label{
+    padding:0 20px 0 5px;
+}
+.gender-category label, 
+.gender-category input, 
+.form-submit-btn input{
+    cursor: pointer;
+}
+.form-submit-btn{
+    margin-top:40px;
+}
