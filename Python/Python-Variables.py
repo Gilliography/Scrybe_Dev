@@ -1,8 +1,20 @@
-name= input("Enter Name: ")
+# Variable assignment
+name = "Alice"
+age = 30
+height = 5.7
+is_student = True
 
-print("My Name is," +name)
+# Multiple assignment
+x, y, z = 10, 20, 30
 
-'''
-You can also use f string to output the name
-eg. print(f"My name is, {name}")
-'''
+# Reassignment
+x = x + 5
+
+# Constant
+PI = 3.14159
+
+# Print variables
+print(name)
+print(age)
+print(height)
+print(is_student)
