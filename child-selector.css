@@ -1,0 +1,24 @@
+/* Selects every second element */
+li:nth-child(2n) {
+    background-color: lightgray;
+}
+
+/* Selects the first and fifth elements */
+li:nth-child(1), li:nth-child(5) {
+    color: red;
+}
+
+/* Selects odd-numbered elements */
+li:nth-child(odd) {
+    font-weight: bold;
+}
+
+/* Selects even-numbered elements */
+li:nth-child(even) {
+    font-style: italic;
+}
+
+/* Selects the first three elements */
+li:nth-child(-n+3) {
+    border: 1px solid black;
+}
