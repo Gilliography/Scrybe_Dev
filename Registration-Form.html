@@ -1,0 +1,96 @@
+<!-- Define the document type as HTML and specify the language as English -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the title of the webpage -->
+    <title>Registration</title>
+    
+    <!-- Configure the viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!-- Link to an external stylesheet named "style.css" for additional styling -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Container for the registration form -->
+    <div class="container">
+        <!-- Heading for the registration form -->
+        <h1 class="form-title">Registration</h1>
+        
+        <!-- Start of the form element with an action set to "#" (temporary placeholder) -->
+        <form action="#">
+            <!-- Container for main user information inputs -->
+            <div class="main-user-info">
+                <!-- User input box for Full Name -->
+                <div class="user-input-box">
+                    <label for="fullname">Full Name</label>
+                    <input type="text"
+                           id="fullName"
+                           name="fullName"
+                           placeholder="Enter Full Name"/>
+                </div>
+                <!-- User input box for Username -->
+                <div class="user-input-box">
+                    <label for="username">Username</label>
+                    <input type="text"
+                           id="username"
+                           name="username"
+                           placeholder="Enter Username"/>
+                </div>
+                <!-- User input box for Email -->
+                <div class="user-input-box">
+                    <label for="email">Email</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter Email"/>
+                </div>
+                <!-- User input box for Phone Number -->
+                <div class="user-input-box">
+                    <label for="phoneNumber">Phone No.</label>
+                    <input type="text"
+                           id="phoneNumber"
+                           name="phoneNumber"
+                           placeholder="Enter Phone Number"/>
+                </div>
+                <!-- User input box for Password -->
+                <div class="user-input-box">
+                    <label for="password">Password</label>
+                    <input type="password"
+                           id="password"
+                           name="password"
+                           placeholder="Enter Password"/>
+                </div>
+                <!-- User input box for Confirm Password -->
+                <div class="user-input-box">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password"
+                           id="confirmPassword"
+                           name="confirmPassword"
+                           placeholder="Confirm Password"/>
+                </div>
+                
+                <!-- Container for gender details -->
+                <div class="gender-details-box">
+                    <!-- Gender title -->
+                    <span class="gender-title">Gender</span>
+                    <!-- Gender category with radio buttons for Male, Female, and Other -->
+                    <div class="gender-category">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                
+                <!-- Submit button for the form -->
+                <div class="form-submit-btn">
+                    <input type="submit" value="Register">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
