@@ -24,5 +24,11 @@ new_cows=("Tumbo", "Mardad", "Chepsoimet")
 cows.extend(new_cows)
 print("Updated cow names is:", cows)
 
+# Changing list items using "=" operator
+colors = ["Blue", "Red", "Green"]
+print("The original list of colors is:", colors)
 
+# Changing the third color
+colors[2] = "Maroon"
+print("Updated list of colors is:", colors)
 
