@@ -15,6 +15,14 @@ print(names[0])
 print(names[1])
 print(names[2])
 print(names[3])
-print(names[3])
+print(names[4])
+print(names[5])
+
+#Adding elements to a list from other iterables using extend() function
+cows=["Cheboit", "Cheptilit", "Ringas", "Tuimet"]
+new_cows=("Tumbo", "Mardad", "Chepsoimet")
+cows.extend(new_cows)
+print("Updated cow names is:", cows)
+
 
 
