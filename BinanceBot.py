@@ -2,8 +2,8 @@ import ccxt
 import time
 
 # Binance API credentials
-api_key = 'kPOBmx1iMsbX01mxdPBWqhsSRFJUy43SH2MhxLBSurttlHl3ICiSfL8NfY5cgmMZ'
-api_secret = 'OIN1p1Y4FsT0e73UGK7SZCqMjuoOcUKohJIHXq42F18R95g7GDRYL3oOM7EyeGRB'
+api_key = ''
+api_secret = ''
 
 # Initialize Binance exchange
 exchange = ccxt.binance({
