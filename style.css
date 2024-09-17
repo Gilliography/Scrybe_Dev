@@ -1,0 +1,161 @@
+/* Set default styles for all elements, ensuring no padding, margin, and correct box-sizing, along with a sans-serif font family */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Style for the whole body of the page */
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(background2.jpg); /* Set the background image */
+    background-size: cover; /* Ensure the background covers the entire viewport */
+}
+
+/* Container holding the main content */
+.container {
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white; /* Add an inset shadow effect */
+}
+
+/* Title of the form */
+.form-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black; /* Add a shadow effect to the text */
+    border-bottom: solid 1px white; /* Add a white border line at the bottom */
+}
+
+/* Styling for the main user information section */
+.main-user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/* Alternate styling for even-numbered user input boxes */
+.user-input-box:nth-child(2n) {
+    justify-content: end;
+}
+
+/* Styling for each user input box */
+.user-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+/* Styling for labels within user input boxes */
+.user-input-box label {
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+/* Styling for input elements within user input boxes */
+.user-input-box input {
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+/* Styling for the gender title */
+.gender-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+/* Styling for gender category section */
+.gender-category {
+    margin: 15px 0;
+    color: white;
+}
+
+/* Styling for labels within gender category */
+.gender-category label {
+    padding: 0 20px 0 5px;
+}
+
+/* Styling for clickable elements */
+.gender-category label,
+.gender-category input,
+.form-submit-btn input {
+    cursor: pointer;
+}
+
+/* Styling for the submit button */
+.form-submit-btn {
+    margin-top: 40px;
+}
+
+/* Styling for submit button input */
+.form-submit-btn input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgba(63, 114, 76, 0.7); /* Semi-transparent green background */
+}
+
+/* Hover effect for submit button */
+.form-submit-btn input:hover {
+    background: rgba(56, 204, 93, 0.7); /* Semi-transparent green background with hover effect */
+    color: rgb(255, 255, 255);
+}
+
+/* Media query for screen sizes up to 600px */
+@media (max-width: 600px) {
+    .container {
+        min-width: 280px; /* Minimum width for the container */
+    }
+
+    .user-input-box {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n) {
+        justify-content: space-between;
+    }
+
+    .gender-category {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info {
+        max-height: 380px; /* Set maximum height for the user info section */
+        overflow: auto; /* Add scroll if content overflows */
+    }
+
+    /* Hide the default scrollbar */
+    .main-user-info::-webkit-scrollbar {
+        width: 0;
+    }
+}
