@@ -83,7 +83,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     # Initialize Telegram bot with the actual token
-    TELEGRAM_BOT_TOKEN = '6415257222:AAEA4qzwSurphodKk-L8C_YnEUm5eXuBlAY'
+    TELEGRAM_BOT_TOKEN = ''
     
     # Create the Application
     application = Application.builder().token(TELEGRAM_BOT_TOKEN).build()

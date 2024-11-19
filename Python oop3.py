@@ -6,6 +6,7 @@ class Animal:
     def speak(self):
         raise NotImplementedError("Subclass must implement abstract method")
 
+#inheritance of class Animal by class Dog
 class Dog(Animal):
     def speak(self):
         return f"{self.name} says Woof!"

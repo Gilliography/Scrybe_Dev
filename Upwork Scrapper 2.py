@@ -91,3 +91,5 @@ if __name__ == "__main__":
     df.to_excel(os.path.join(downloads_path, 'quora_jobs.xlsx'), index=False)
     
     print("Scraping complete. Data saved to 'quora_jobs.xlsx' in your Downloads folder.")
+
+

@@ -12,3 +12,15 @@ df = pd.DataFrame(data)
  
 # select two columns
 print(df[['Name', 'Address', 'Qualification']])
+
+
+data= {
+    "calories": [120, 450, 300],
+    'weight':[60, 76, 81]
+}
+
+df=pd.DataFrame(data)
+print(df)
+
+
+
