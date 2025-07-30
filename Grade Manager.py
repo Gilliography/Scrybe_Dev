@@ -34,7 +34,7 @@ def main():
             print("2. Enter Marks")
             print("3. Exit")
 
-            choice = input("Enter your choice")
+            choice = input("Enter your choice: ")
 
             if choice == '1':
                 name = input("Enter student's name: ")
@@ -43,7 +43,13 @@ def main():
                 marks = int(input("Enter student's marks: "))
                 print(f"student's marks are {marks}.")
             elif choice == '3':
-                print("Exiting Grade Manager. Goodbye!")
+                print("Exiting Grade Manager. Goodbye! ")
+                break
+            else:
+                print("Invalid choice. Please try again.")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+main()
 
 grade_manager = GradeManager(name, marks, grade)
 print(f"Hi {name}, your grade is: {grade}")
