@@ -1,11 +1,15 @@
-#if condition
-a = 33
-b = 200
-if b > a:
-  print("b is greater than a")
+try:
+    for counter in range(1,10, 2):
+        print(counter)
+        print("Looping through the range in reverse order")
+except Exception as e:
+    print("An error occurred:", e)
 
-#while loop
-  i=1
-  while i<6:
-      print(i)
-      i+=1
+    for x in range(10, 0, -1):
+        if x==3:
+            continue
+        else:
+            if x==5:
+                break
+        print(x)
+        print("Looping through the range in reverse order")
