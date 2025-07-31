@@ -57,7 +57,7 @@ with st.expander("📋 Game Setup", expanded=not st.session_state.words):
 if st.session_state.words:
     st.subheader(f"🔢 Round {st.session_state.round} of {st.session_state.rounds}")
 
-    # Generate new word if needed
+    # Generate new word if needed or if the round has changed
     if st.session_state.scrambled == '':
         word = random.choice(st.session_state.words)
         scrambled = scramble_word(word)
